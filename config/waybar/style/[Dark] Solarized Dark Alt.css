@@ -1,0 +1,112 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+/* Solarized Dark - Golden Noir Structure */
+
+@import "solarized_colors.css";
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+	min-height: 0;  
+    font-size: 97%;
+    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+}
+
+window#waybar {
+    background: @base03;
+    border-radius: 30px;
+    color: @blue;
+}
+
+window#waybar.hidden {
+    opacity: 0.5;
+}
+
+tooltip {
+    background: @base02;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @base03;
+    color: @yellow;
+}
+
+.modules-left,
+.modules-right {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 4px;
+	padding-left: 4px;
+}
+
+.modules-center {
+    border-left: 1px solid @yellow;
+    border-right: 1px solid @yellow;
+    border-radius: 20px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 4px;
+	padding-left: 4px;
+}
+
+#taskbar button,
+#workspaces button {
+    color: @base01;
+    box-shadow: none;
+	text-shadow: none;
+    padding: 0px;
+    border-radius: 9px;
+    padding-left: 4px;
+    padding-right: 4px;
+    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#taskbar button.active,
+#workspaces button.active {
+    color: @yellow;
+    background-color: @base03;
+    border-radius: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#taskbar button:hover,
+#workspaces button:hover {
+    color: @yellow;
+    border-radius: 15px;
+ 	padding-left: 2px;
+    padding-right: 2px;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#backlight,
+#battery,
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray,
+#window,
+#workspaces {
+    color: @base1;
+	padding: 5px 6px;
+}
+
+#temperature.critical {
+    background-color: @red;
+}
+
+#battery.critical:not(.charging) {
+	color: @red;
+}
+
+#backlight-slider trough,
+#pulseaudio-slider trough {
+    background-color: @base02;
+}
+
+#backlight-slider highlight,
+#pulseaudio-slider highlight {
+    background-color: @blue;
+}
