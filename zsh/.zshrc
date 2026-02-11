@@ -3,7 +3,7 @@
 
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="cloud"
+ZSH_THEME=""
 
 plugins=(
     git
@@ -12,6 +12,10 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+
+fpath+=($HOME/.zsh/pure)
+autoload -U promptinit; promptinit
+prompt pure
 
 # Check archlinux plugin commands here
 # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/archlinux
