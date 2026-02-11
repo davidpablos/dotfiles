@@ -221,7 +221,10 @@ window#waybar.empty #window {
 }
 
 #custom-cava_mviz {
-	color: @magenta;
+    color: @magenta;
+    font-size: 100%; 
+    letter-spacing: 2px;
+    min-width: 120px;
 }
 
 #custom-menu {
